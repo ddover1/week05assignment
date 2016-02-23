@@ -1,8 +1,28 @@
 body {
 	background-color: #ececec;
 }
-
 .wrapper {
-	margin: 0 auto;
-	max-width: 80rem;
-}
+  margin: 0 auto;
+  max-width: 80rem;
+  }
+.nav {
+  visibility: hidden; 
+  margin: 0;
+  }
+  
+@media only screen and (min-width: 768px) {
+  .nav {
+    visibility: visible; 
+    vertical-align: middle;
+    margin: 2.5rem 3rem;
+    }
+  .header {
+    display: -webkit-flex;
+    display: flex;
+    }
+  .main {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row-reverse;
+    }
+  }
